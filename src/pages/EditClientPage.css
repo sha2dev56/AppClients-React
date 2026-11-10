@@ -1,0 +1,109 @@
+
+.edit-client-page {
+  --background: #f5f6f2;
+}
+
+.edit-client-content {
+  --background: #f5f6f2;
+}
+
+.edit-client-container {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 35px 22px;
+}
+
+.edit-heading {
+  margin-bottom: 25px;
+}
+
+.edit-heading h1 {
+  margin: 0 0 8px;
+  color: #394a42;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.edit-heading p {
+  margin: 0;
+  color: #89978e;
+  font-size: 15px;
+}
+
+.edit-form {
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e8ece8;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(57, 74, 66, 0.05);
+}
+
+.edit-field {
+  margin-bottom: 22px;
+}
+
+.edit-label {
+  display: block;
+  margin-bottom: 9px;
+  color: #394a42 !important;
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 1 !important;
+}
+
+.edit-input {
+  --background: #f8f9f6;
+  --color: #394a42;
+  --padding-start: 12px;
+  --inner-padding-end: 12px;
+  border: 1px solid #e0e7e1;
+  border-radius: 9px;
+}
+
+.edit-input ion-input {
+  --color: #394a42;
+  --placeholder-color: #a0aaa3;
+  min-height: 48px;
+}
+
+.edit-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.edit-buttons ion-button {
+  --background: #718c7a;
+  --background-hover: #637b6b;
+  --color: #ffffff;
+  --border-radius: 9px;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.edit-buttons ion-button[color="medium"] {
+  --background: transparent;
+  --color: #718c7a;
+  --border-color: #718c7a;
+}
+
+.edit-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #718c7a;
+  gap: 12px;
+}
+
+@media (max-width: 500px) {
+  .edit-client-container {
+    padding: 24px 14px;
+  }
+
+  .edit-form {
+    padding: 20px 16px;
+  }
+}

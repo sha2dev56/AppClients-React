@@ -1,2 +1,69 @@
 /* For information on how to create your own theme, please refer to:
 http://ionicframework.com/docs/theming/ */
+
+
+/* Paleta suave y profesional AppClients */
+
+:root {
+  --ion-color-primary: #718c7a;
+  --ion-color-primary-rgb: 113, 140, 122;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #637b6b;
+  --ion-color-primary-tint: #7f9888;
+
+  --ion-color-secondary: #a8b9ae;
+  --ion-color-secondary-rgb: 168, 185, 174;
+  --ion-color-secondary-contrast: #26372d;
+  --ion-color-secondary-shade: #94a399;
+  --ion-color-secondary-tint: #b2c1b8;
+
+  --ion-color-tertiary: #dce8e0;
+  --ion-color-tertiary-rgb: 220, 232, 224;
+  --ion-color-tertiary-contrast: #394a42;
+
+  --ion-background-color: #f5f6f2;
+  --ion-text-color: #394a42;
+  --ion-toolbar-background: #ffffff;
+  --ion-toolbar-color: #394a42;
+  --ion-card-background: #ffffff;
+  --ion-item-background: #ffffff;
+}
+
+/* Fondo general */
+ion-content {
+  --background: #f5f6f2;
+}
+
+/* Cabeceras */
+ion-toolbar {
+  --background: #ffffff;
+  --color: #394a42;
+}
+
+/* Botones */
+ion-button {
+  --border-radius: 10px;
+  font-weight: 600;
+  text-transform: none;
+}
+
+/* Elementos de las listas */
+ion-item {
+  --background: #ffffff;
+  --border-color: #e8ece8;
+  --border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+/* Campos de formulario */
+ion-input {
+  --color: #394a42;
+  --placeholder-color: #9aa79e;
+}
+
+/* Listas */
+ion-list {
+  background: transparent;
+}
+

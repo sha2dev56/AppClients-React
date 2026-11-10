@@ -1,7 +1,7 @@
 
 import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { Route, Redirect } from 'react-router-dom';
+import { Route, Navigate } from 'react-router-dom';
 
 import Home from './pages/Home';
 import ClientsPage from './pages/ClientsPage';
@@ -28,18 +28,15 @@ const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
-        <Route exact path="/home" component={Home} />
+        <Route path="/home" element={<Home />} />
 
-        <Route exact path="/clients" component={ClientsPage} />
+        <Route path="/clients" element={<ClientsPage />} />
 
-        <Route exact path="/new-client" component={NewClientPage} />
+        <Route path="/new-client" element={<NewClientPage />} />
 
-        <Route exact path="/edit-client/:id" component={EditClientPage} />
+        <Route path="/edit-client/:id" element={<EditClientPage />} />
 
-        <Route exact path="/">
-          <Redirect to="/clients" />
-        </Route>
-
+        <Route path="/" element={<Navigate to="/clients" replace />} />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

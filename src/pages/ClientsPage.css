@@ -1,0 +1,169 @@
+
+.clients-page {
+  --background: #f5f6f2;
+  color: #394a42;
+}
+
+.clients-toolbar {
+  --background: #ffffff;
+  --color: #394a42;
+  --border-color: #e8ece8;
+}
+
+.clients-toolbar ion-title {
+  font-weight: 600;
+}
+
+.clients-content {
+  --background: #f5f6f2;
+}
+
+.clients-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 24px;
+}
+
+.clients-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.clients-heading h1 {
+  margin: 0 0 8px;
+  color: #394a42;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.clients-heading p {
+  margin: 0;
+  color: #89978e;
+  font-size: 15px;
+}
+
+.add-client-button {
+  --background: #718c7a;
+  --background-hover: #637b6b;
+  --color: #ffffff;
+  --border-radius: 10px;
+  --box-shadow: none;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.clients-section h2 {
+  margin: 0 0 6px;
+  color: #394a42;
+  font-size: 20px;
+  font-weight: 650;
+}
+
+.clients-description {
+  margin: 0 0 20px;
+  color: #89978e;
+  font-size: 14px;
+}
+
+.clients-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.client-card {
+  margin: 0;
+  background: #ffffff;
+  border: 1px solid #e8ece8;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(57, 74, 66, 0.05);
+}
+
+.client-card ion-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 22px;
+}
+
+.client-information h3 {
+  margin: 0 0 10px;
+  color: #394a42;
+  font-size: 17px;
+  font-weight: 650;
+}
+
+.client-information p {
+  margin: 5px 0;
+  color: #718078;
+  font-size: 14px;
+}
+
+.client-information span {
+  display: inline-block;
+  margin-top: 7px;
+  color: #a0aaa3;
+  font-size: 12px;
+}
+
+.client-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.edit-button {
+  --color: #718c7a;
+  --border-color: #718c7a;
+  --border-radius: 8px;
+  --background: #ffffff;
+  text-transform: none;
+}
+
+.delete-button {
+  --background: #b97878;
+  --background-hover: #a96767;
+  --color: #ffffff;
+  --border-radius: 8px;
+  --box-shadow: none;
+  text-transform: none;
+}
+
+.empty-clients {
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #e8ece8;
+  border-radius: 12px;
+  text-align: center;
+  color: #718078;
+}
+
+@media (max-width: 600px) {
+  .clients-container {
+    padding: 22px 14px;
+  }
+
+  .clients-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .client-card ion-card-content {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 18px;
+  }
+
+  .client-actions {
+    width: 100%;
+  }
+
+  .client-actions ion-button {
+    flex: 1;
+  }
+}
